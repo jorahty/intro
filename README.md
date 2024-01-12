@@ -40,6 +40,6 @@ You only have to pull this image once. We will use this image for the entire qua
 8. Within the new branch, you can push to Github with `git push origin submit`
 9. On Github, check the autograder results by clicking the **Actions** tab:
 
-![](actions.png)
+![]([actions.png](https://docs.github.com/assets/cb-15465/mw-1440/images/help/repository/actions-tab-global-nav-update.webp)https://docs.github.com/assets/cb-15465/mw-1440/images/help/repository/actions-tab-global-nav-update.webp)
 
 In case of questions, please share it through Piazza!
