@@ -15,9 +15,9 @@ If you're not already comfortable with GitHub and Docker:
 
 Write a Python program `git-101.py` that reads two integers from standard input (stdin) and prints out their sum to standard output (stdout).
 
-The code must be in a file named `git-101.py` for the autograder to run correctly.
-
-**⚠️ Important**: Do not modify the `.github` directory.
+**⚠️ Important**: For the autograder to run correctly:
+- The code must be in a file named `git-101.py`
+- Do not modify the `.github` directory
 
 ## Docker Image
 
@@ -33,7 +33,10 @@ You only have to pull this image once. We will use this image for the entire qua
 
 1. Clone this repository to your local machine
 2. Write your program in a file named `git-101.py`
-3. To test your program inside a container identical to the one used by the autograder, start a new container using the `reeselevine/cse113:latest` image and mount the local repository folder to the container. (_Hint: the `-v` option_)
+3. To test your program inside a container identical to the one used by the autograder, start a new container using the `reeselevine/cse113:latest` image and mount the local repository folder to the container:
+```
+docker run -v "$(pwd)":/assignments -it reeselevine/cse113:latest bash
+```
 4. Test your solution inside the container. For this homework, test your code using the command `python git-101.py < test-case.in`
 6. Commit your changes
 7. After you commit, **if it is the first time you are submitting** the homework, create a `submit` branch using the command `git checkout -b submit`
