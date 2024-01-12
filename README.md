@@ -34,7 +34,7 @@ You only have to pull this image once. We will use this image for the entire qua
 1. Clone this repository to your local machine
 2. Write your program in a file named `git-101.py`
 3. To test your program inside a container identical to the one used by the autograder, start a new container using the `reeselevine/cse113:latest` image and mount the local repository folder to the container. (_Hint: the `-v` option_)
-4. Test your solution inside the container. For this assignment, use the command `python git-101.py < test-case.in`.
+4. Test your solution inside the container. For this homework, test your code using the command `python git-101.py < test-case.in`
 6. Commit your changes
 7. After you commit, **if it is the first time you are submitting** the homework, create a `submit` branch using the command `git checkout -b submit`
 8. Within the new branch, you can push to Github with `git push origin submit`
